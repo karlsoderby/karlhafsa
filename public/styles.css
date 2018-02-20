@@ -1,0 +1,59 @@
+body {
+    background-image:url("sleepybg.png");
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.sleepyButton {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    
+   
+    
+    
+}
+
+.connectButton {
+    background: transparent;
+    color: transparent;
+    
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    border: 0;
+    
+    background-image: url("caffee.png");
+    
+    width: 210px;
+    height: 390px;
+    background-size: 100%;
+    background-size: auto;
+}
+
+#myDIV {
+    text-align: right;
+    align-content: right;
+    justify-content: right;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: -250px;
+    margin-right: 100px;
+   
+    margin-left: 900px;
+    height: 340px;
+    width: 400px;
+    background-image: url("ledonoff.png");
+    
+    background-size: 100%;
+    
+}
