@@ -1,7 +1,10 @@
 var socket = null;
+//Posts a result that button has been clicked
+var postresult = "Working!";
+
 if (document.readyState != 'loading') ready();
 else document.addEventListener('DOMContentLoaded', ready);
-
+//sends a message to the app.js script
 function ready() {
 	const url = 'ws://' + location.host + '/ws';
 	socket = new ReconnectingWebsocket(url);
@@ -18,13 +21,8 @@ function send(str) {
 function logReceived(d) {
 	console.log(d);
 }
-
-
+//displays a div saying that the program is working
 function displayDiv() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+document.getElementById("results").innerHTML= postresult;
+document.getElementById("results").style.background = "green";
 }
