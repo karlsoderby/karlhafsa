@@ -25,21 +25,61 @@ h1 {
     
 }
 
-.connectButton {
-    background: transparent;
-    color: transparent;
+.grow {
+    padding: 5px 5px 5px 5px;
     
-    font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
-    border: 0;
+    height: 80px;
+    width: 27%;
+    margin: auto;
+    float: center;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    background-color: #4a6570;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
     
-    background-image: url("caffee.png");
+  }
+
+  .grow:hover {
+    height: 110px;
+    width: 30%;
+    background-color: #4a6570;
     
-    width: 210px;
-    height: 390px;
-    background-size: 100%;
-    background-size: auto;
-}
+  }
+
+  #results {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+    height: 80px;
+    width: 27%;
+    color: white;
+    font-size: 30px;
+    padding-top: 40px;
+  }
+
+ 
+
+  .connectButton {
+      border: none;
+      background: #4a6570;
+      height: 100%;
+      width: 100%;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 30px;
+      color: white;
+      
+  }
+
+
+
+
 
 #myDIV {
     text-align: right;
