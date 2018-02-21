@@ -1,4 +1,4 @@
-//sample code used from the skeleton example, starts a live server on localhost:5000 and listens for any messages
+//this code is a sample code from the skeleton example, starts a live server on localhost:5000 and listens for any messages
 
 "use strict";
 
