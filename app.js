@@ -1,3 +1,5 @@
+//sample code used from the skeleton example, starts a live server on localhost:5000 and listens for any messages
+
 "use strict";
 
 var Cylon = require("cylon");
@@ -14,17 +16,18 @@ var app = ews.app;
 
 
 
-
+// recieves a msg from the script running in the browser
 app.ws('/ws', function (ws, req) {
   ws.on('message', function (msg) {
   
 
-	
+//sets up the robot that will run on the arduino	
 var robot2 = Cylon.robot({
+//
   connections: {
     arduino: { adaptor: 'firmata', port: 'COM7' }
   },
-
+//states what pins are going to be used
   devices: {
     led1: { driver: 'led', pin: 3 },
     led2: { driver: 'led', pin: 4 },
@@ -34,7 +37,8 @@ var robot2 = Cylon.robot({
   
 
   work: function(my) 
-  
+  //turns on the led on pin 3 for 30 seconds, then shuts it down
+  //after 30 seconds, the led on pin 2 starts blinking
     {
       my.led3.turnOn();
       after((30).seconds(), my.led3.turnOff);
@@ -42,7 +46,7 @@ var robot2 = Cylon.robot({
       every((0.5).second(), my.led2.toggle);
       
     
-
+// the led on pin 1 dims the lights up and down repeadetly
     var brightness = 0,
     fade = 5;
     every(0.05.seconds(), function() {
@@ -54,7 +58,7 @@ var robot2 = Cylon.robot({
       }
 
     })
-   
+   // here it recieves the message "lamp" from the browser, and runs the robot on the arduino board
   if(msg =="lamp"){
   robot2.start();
   }	
