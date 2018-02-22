@@ -9,13 +9,38 @@
 </head>
 <body>
   <h1>Wake up sleepy</h1>
-  <div class="sleepyButton">
-  <input class ="connectButton"type="submit" value="Blink"  onclick="send('lamp'); displayDiv();">
-
-  <div id="myDIV"hidden>
+  <br>
+  
+  <div class="grow">
+  <input class ="connectButton"type="submit" value="ON"  onclick="send('lamp'); displayDiv();">
   
   </div>
+  <div class ="grow">
+    <input class ="connectButton"type="submit" value="OFF"  onclick="send('lamp2'); displayDiv1();">
+
   </div>
+  <div id="results"></div>
+  <br>
+  
+  <div class ="grow">
+      <input class ="connectButton"type="submit" value="ON"  onclick="send('lamp3'); displayDiv2();">
+    </div>
+    <div class ="grow">
+        <input class ="connectButton"type="submit" value="OFF"  onclick="send('lamp4'); displayDiv3();">
+      </div>
+
+<div id="results1">
+  </div>
+<br>
+    <div class ="grow">
+        <input class ="connectButton"type="submit" value="ON"  onclick="send('lamp5'); displayDiv4();">
+      </div>
+      
+  
+  <div id="results2">
+  
+</div>
+
   <script src="lib/reconnecting-websocket.js"></script>
   <script src="script.js"></script>
   
