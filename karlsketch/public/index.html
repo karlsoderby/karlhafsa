@@ -8,7 +8,7 @@
 
 </head>
 <body>
-  <h1>Turn coffee pot on & off</h1>
+  <h1>A game of leds</h1>
   
   
   <div class="grow">
@@ -16,35 +16,11 @@
   
   </div>
   
-  <div class ="grow">
-    <input class ="connectButton"type="submit" value="OFF"  onclick="send('lamp2'); displayDiv1();">
-
-  </div>
+  
   <div id="results">
       Waiting for response..
   </div>
-  <br>
-  <h1>Turn lamp on & off</h1>
-  <div class ="grow">
-      <input class ="connectButton"type="submit" value="ON"  onclick="send('lamp3'); displayDiv2();">
-    </div>
-    <div class ="grow">
-        <input class ="connectButton"type="submit" value="OFF"  onclick="send('lamp4'); displayDiv3();">
-      </div>
 
-<div id="results1">
-  Waiting for response..
-  </div>
-  <br>
-  <h1>Play a tune for 30 seconds</h1>
-    <div class ="grow">
-        <input class ="connectButton"type="submit" value="ON"  onclick="send('lamp5'); displayDiv4();">
-      </div>
-      
-  
-  <div id="results2">
-      Waiting for response..
-</div>
 
   <script src="lib/reconnecting-websocket.js"></script>
   <script src="script.js"></script>
