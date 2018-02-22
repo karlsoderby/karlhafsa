@@ -8,10 +8,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressWs = require('express-ws');
-
 var ews = expressWs(express());
 var app = ews.app;
+
 //Defines robot's attributes and functions
+
 var robot2 = Cylon.robot({
   connections: {
     arduino: { adaptor: 'firmata', port: 'COM7' }
@@ -22,7 +23,7 @@ var robot2 = Cylon.robot({
     led2: { driver: 'led', pin: 4 },
     led3: { driver: 'led', pin: 5 }
   },
-//Activates
+//A series of functions that will turn a led on and off from the browser
   toggle: function(my) 
   {
     this.led1.turnOn();
@@ -52,6 +53,7 @@ var robot2 = Cylon.robot({
       this.led2.turnOff();
 
     },
+	
 //This functions activate a led for 30 seconds, then turns it off
     work3: function(my) {
 
@@ -84,7 +86,7 @@ app.ws('/ws', function (ws, req) {
   
 
 	
-
+// A series of if statements waiting for browser to make a request
   if(msg =="lamp2"){
   robot2.work();
   }	
