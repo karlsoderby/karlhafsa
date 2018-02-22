@@ -1,3 +1,4 @@
+
 "use strict";
 
 var Cylon = require("cylon");
@@ -10,7 +11,7 @@ var expressWs = require('express-ws');
 
 var ews = expressWs(express());
 var app = ews.app;
-
+//Defines robot's attributes and functions
 var robot2 = Cylon.robot({
   connections: {
     arduino: { adaptor: 'firmata', port: 'COM7' }
@@ -21,7 +22,7 @@ var robot2 = Cylon.robot({
     led2: { driver: 'led', pin: 4 },
     led3: { driver: 'led', pin: 5 }
   },
-
+//Activates
   toggle: function(my) 
   {
     this.led1.turnOn();
@@ -51,7 +52,7 @@ var robot2 = Cylon.robot({
       this.led2.turnOff();
 
     },
-
+//This functions activate a led for 30 seconds, then turns it off
     work3: function(my) {
 
       this.led3.turnOn();
@@ -69,7 +70,7 @@ var robot2 = Cylon.robot({
 
     });
 
-  
+  //Starts the robot when live server is started
    robot2.start();  
 
 
@@ -77,7 +78,7 @@ var robot2 = Cylon.robot({
     
 
 
-
+//recieves a message from the browser and if text matches, triggers a function in the robot
 app.ws('/ws', function (ws, req) {
   ws.on('message', function (msg) {
   
