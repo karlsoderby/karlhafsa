@@ -1,5 +1,5 @@
 ## !!Karl Söderby's sketch
-This is a sketch of a LED triggered from the browser. It runs a function that will dim LED1 from 0-255, and will turn on LED1, 2 & 3 when it hits a certain value. It also turns them off in order.
+This is a sketch of a LED that controls the on/off mode of 3 other LEDs. It runs a function that will dim LED1 from 0-255, and will turn on/off LED1, 2 & 3 when it hits a certain value. 
 
 # Controlling Arduino from browser
 
