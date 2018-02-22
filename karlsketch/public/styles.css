@@ -1,0 +1,125 @@
+body {
+    background-image:url("sleepybg.png");
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.sleepyButton {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    
+   
+    
+    
+}
+
+.grow {
+    padding: 5px 5px 5px 5px;
+    
+    height: 50px;
+    width: 15%;
+    margin: auto;
+    float: center;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    background-color: #4a6570;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    
+  }
+
+  .grow:hover {
+    
+    width: 20%;
+    background-color: #4a6570;
+    
+  }
+
+  #results, #results1 {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    height: 60px;
+    width: 20%;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    
+  }
+
+  #results2 {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    height: 60px;
+    width: 20%;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 100px;
+  }
+
+ 
+
+  .connectButton {
+      border: none;
+      background: #4a6570;
+      height: 100%;
+      width: 100%;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 30px;
+      color: white;
+      
+  }
+
+  .connectButton1 {
+    border: none;
+    background: #4a6570;
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: white;
+    float:left;
+    
+}
+
+
+
+
+#myDIV {
+    text-align: right;
+    align-content: right;
+    justify-content: right;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: -250px;
+    margin-right: 100px;
+   
+    margin-left: 900px;
+    height: 340px;
+    width: 400px;
+    background-image: url("ledonoff.png");
+    
+    background-size: 100%;
+    
+}
