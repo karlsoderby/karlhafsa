@@ -28,8 +28,8 @@ h1 {
 .grow {
     padding: 5px 5px 5px 5px;
     
-    height: 80px;
-    width: 27%;
+    height: 50px;
+    width: 15%;
     margin: auto;
     float: center;
     position: relative;
@@ -45,23 +45,38 @@ h1 {
   }
 
   .grow:hover {
-    height: 110px;
-    width: 30%;
+    
+    width: 20%;
     background-color: #4a6570;
     
   }
 
-  #results {
+  #results, #results1 {
     margin: auto;
     text-align: center;
     justify-content: center;
     position: relative;
-    margin-top: 100px;
-    height: 80px;
-    width: 27%;
+    margin-top: 20px;
+    height: 60px;
+    width: 20%;
     color: white;
     font-size: 30px;
-    padding-top: 40px;
+    padding-top: 10px;
+    
+  }
+
+  #results2 {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    height: 60px;
+    width: 20%;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 100px;
   }
 
  
@@ -77,6 +92,17 @@ h1 {
       
   }
 
+  .connectButton1 {
+    border: none;
+    background: #4a6570;
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: white;
+    float:left;
+    
+}
 
 
 
