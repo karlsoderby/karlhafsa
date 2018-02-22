@@ -21,6 +21,6 @@ Wire Arduino board accordingly to the pins in the app.js file,
 
 You can now control the arduino board from localhost:5000
 
-
+(For Mac users, please visit http://gort.io/documentation/getting_started/downloads/ to download gort for Mac, and replace the current gort.exe file that currently exists in this folder, or use the one that I included in the /gort for mac/gort.exe)
 
 
