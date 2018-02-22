@@ -32,20 +32,21 @@ var robot2 = Cylon.robot({
     
       var brightness = 0,
           fade = 5;
-          every((1).second(), my.led2.toggle);
-          every(0.05.seconds(), function() {
+          
+          
+          every(0.1.seconds(), function() {
             brightness += fade;
             my.led1.brightness(brightness);
             if ((brightness === 0) || (brightness === 255)) { fade = -fade; }
-            if (brightness === 50) {my.led2.turnOn();} 
-            if (brightness === 170) {my.led2.turnOff();}
-            if (brightness === 80) {my.led3.turnOn();}
-            if (brightness === 190) {my.led3.turnOff();}
-            if (brightness === 100) {my.led4.turnOn();}
+            if (brightness === 40) {my.led2.toggle();} 
+            if (brightness === 190) {my.led2.turnOff();}
+            if (brightness === 50) {my.led3.toggle();}
+            if (brightness === 200) {my.led3.turnOff();}
+            if (brightness === 60) {my.led4.turnOn();}
             if (brightness === 210) {my.led4.turnOff();}
           });
         }
-  
+      
 
     });
 
@@ -63,10 +64,10 @@ app.ws('/ws', function (ws, req) {
   
 
 	
-// starts a function in the robot if message is "lamp"
-  if(msg =="lamp"){
+
+  
   robot2.work();
-  }	
+  	
 
   
     
