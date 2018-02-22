@@ -1,10 +1,15 @@
 var socket = null;
-//Posts a result that button has been clicked
-var postresult = "Working!";
+var postresult = "Coffee is brewing...";
+var postresult1 ="Coffee pot off.";
+var postresult2 ="Lights turned on.";
+var postresult3 ="Lights turned off.";
+var postresult4 ="On for 30 sec.";
+
+
 
 if (document.readyState != 'loading') ready();
 else document.addEventListener('DOMContentLoaded', ready);
-//sends a message to the app.js script
+
 function ready() {
 	const url = 'ws://' + location.host + '/ws';
 	socket = new ReconnectingWebsocket(url);
@@ -21,8 +26,35 @@ function send(str) {
 function logReceived(d) {
 	console.log(d);
 }
-//displays a div saying that the program is working
+
 function displayDiv() {
 document.getElementById("results").innerHTML= postresult;
 document.getElementById("results").style.background = "green";
 }
+
+function displayDiv1() {
+	document.getElementById("results").innerHTML= postresult1;
+	document.getElementById("results").style.background = "red";
+	}
+
+	function displayDiv2() {
+		document.getElementById("results1").innerHTML= postresult2;
+		document.getElementById("results1").style.background = "green";
+		}
+
+
+		function displayDiv3() {
+			document.getElementById("results1").innerHTML= postresult3;
+			document.getElementById("results1").style.background = "red";
+			}
+
+			function displayDiv4() {
+				document.getElementById("results2").innerHTML= postresult4;
+				document.getElementById("results2").style.background = "green";
+				}
+		
+		
+				function displayDiv5() {
+					document.getElementById("results2").innerHTML= postresult5;
+					document.getElementById("results2").style.background = "red";
+					}
