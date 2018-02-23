@@ -11,6 +11,9 @@ To use: First, you want to wire your arduino board accordingly, in this example,
 
 This program uses 3 LEDs and 3 resistors, it is important to use resistors to protect the led and arduino board. It also requires a total of 6 cables, to set up the Arduino. 
 
+## Github
+This complete package can be found at github under https://github.com/karlsoderby/karlhafsa
+
 ## Installation
 
 $ npm install
