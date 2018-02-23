@@ -15,7 +15,7 @@ var app = ews.app;
 
 var robot2 = Cylon.robot({
   connections: {
-    arduino: { adaptor: 'firmata', port: 'COM7' }//'/dev/cu.usbmodem1421'
+    arduino: { adaptor: 'firmata', port: 'COM7' }//'/dev/cu.usbmodem1421'/ 1421 for left port 1411 for right port
   },
 
   devices: {
