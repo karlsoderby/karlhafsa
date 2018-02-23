@@ -11,7 +11,7 @@ var expressWs = require('express-ws');
 var ews = expressWs(express());
 var app = ews.app;
 
-var robot2 = Cylon.robot({
+var robot = Cylon.robot({
   connections: {
     arduino: { adaptor: 'firmata', port: '/dev/cu.usbmodem1411' }
   },
@@ -28,7 +28,7 @@ var robot2 = Cylon.robot({
     }).start();
 
   
-   robot2.start();  
+   robot.start();  
 
 
   
