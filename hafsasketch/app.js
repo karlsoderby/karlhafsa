@@ -30,7 +30,7 @@ var robot = Cylon.robot({
 
     });
 
-   robot.start();  
+   robot.start(); // cyclon start doesnot work as provided by the examples. 
 
 
   
