@@ -23,11 +23,13 @@ var robot = Cylon.robot({
   },
 
   work: function(my) {
-    every((0.5).second(), my.led.toggle);
-      }
-    }).start();
+    every((0.5).second(), my.led.toggle);}
+          });
+        }
+      
 
-  
+    });
+
    robot.start();  
 
 
